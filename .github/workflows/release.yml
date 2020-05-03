@@ -19,14 +19,14 @@ jobs:
 
       - name: package and releases
         run: |
-          mkdir dotnet
-
-          ignored="! -name $(pwd) "
+          ignored="! -path $(pwd) "
           for i in $(cat .templateignore); do
               ignored+="! -name $i "
           done
+          files=$(find $(pwd) -maxdepth 1 $ignored)
 
-          cp -r $(find $(pwd) -maxdepth 1 $ignored) ./dotnet
+          mkdir dotnet
+          cp -r $files ./dotnet
 
           zip -r dotnet.zip ./dotnet;
           openssl sha256 dotnet.zip | cut -d " " -f2 > dotnet.zip.sha256
