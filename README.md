@@ -1,3 +1,3 @@
-# Dotnet
+# Template Dotnet
 
-c# template for gauge
+.NET C# template for [Gauge](https://gauge.org/).
