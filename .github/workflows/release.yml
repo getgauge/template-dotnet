@@ -32,7 +32,7 @@ jobs:
 
           version=$(jq -r ".version" metadata.json)
 
-          gh release create --title "v$version" dotnet.zip*
+          gh release create --title "v$version" "v$version" dotnet.zip dotnet.zip.sha256
 
       - name: setup git
         run: |
