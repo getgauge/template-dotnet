@@ -1,6 +1,6 @@
 {
   "name": "dotnet",
-  "description": "Gauge template for C# with .NET 7.0",
+  "description": "Gauge template for C# with .NET 8.0",
   "version": "0.0.29",
   "postInstallCmd": "",
   "postInstallMsg": "Run specifications with \"gauge run specs/\"."
