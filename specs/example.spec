@@ -22,7 +22,7 @@ This is the second scenario in this specification
 
 Here's a step that takes a table
 
-* Almost all words have vowels 
+* Almost all words have vowels
 
    |Word  |Vowel Count|
    |------|-----------|
