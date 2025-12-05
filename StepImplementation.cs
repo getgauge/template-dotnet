@@ -5,7 +5,7 @@ using Gauge.CSharp.Lib;
 using Gauge.CSharp.Lib.Attribute;
 using Shouldly;
 
-namespace dotnet.template
+namespace DotNet.Template
 {
     public class StepImplementation
     {
